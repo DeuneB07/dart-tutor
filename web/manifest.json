@@ -1,6 +1,6 @@
 {
-    "name": "dart_tutor",
-    "short_name": "dart_tutor",
+    "name": "Dart Tutor",
+    "short_name": "Dart Tutor",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

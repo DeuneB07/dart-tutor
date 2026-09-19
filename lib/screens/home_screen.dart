@@ -67,13 +67,16 @@ class _HomeScreenState extends State<HomeScreen> {
     final colorScheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          _buildAppBar(context, l10n, colorScheme),
-          _buildSearch(context, l10n, colorScheme),
-          _buildFilterChips(context, l10n, colorScheme),
-          _buildTopicList(context, l10n),
-        ],
+      body: SafeArea(
+        top: false,
+        child: CustomScrollView(
+          slivers: [
+            _buildAppBar(context, l10n, colorScheme),
+            _buildSearch(context, l10n, colorScheme),
+            _buildFilterChips(context, l10n, colorScheme),
+            _buildTopicList(context, l10n),
+          ],
+        ),
       ),
     );
   }

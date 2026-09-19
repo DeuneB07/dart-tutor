@@ -183,7 +183,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsLanguage => 'Language';
 
   @override
-  String get settingsLanguageSystem => 'System default';
+  String get settingsLanguageSystem => 'System';
 
   @override
   String get settingsLanguageEnglish => 'English';

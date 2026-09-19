@@ -33,57 +33,48 @@ class SettingsScreen extends StatelessWidget {
         children: [
           // ── Theme ──────────────────────────────────────────
           _SectionHeader(label: l10n.settingsTheme, colorScheme: colorScheme),
-          RadioGroup<ThemeMode>(
+          RadioListTile<ThemeMode>(
+            value: ThemeMode.system,
             groupValue: themeMode,
             onChanged: (v) {
               if (v != null) onSetThemeMode(v);
             },
-            child: Column(
-              children: [
-                RadioListTile(
-                  value: ThemeMode.system,
-                  title: Text(l10n.settingsThemeSystem),
-                  secondary: const Icon(Icons.brightness_auto_rounded),
-                ),
-                RadioListTile(
-                  value: ThemeMode.light,
-                  title: Text(l10n.settingsThemeLight),
-                  secondary: const Icon(Icons.light_mode_rounded),
-                ),
-                RadioListTile(
-                  value: ThemeMode.dark,
-                  title: Text(l10n.settingsThemeDark),
-                  secondary: const Icon(Icons.dark_mode_rounded),
-                ),
-              ],
-            ),
+            title: Text(l10n.settingsThemeSystem),
+            secondary: const Icon(Icons.brightness_auto_rounded),
+          ),
+          RadioListTile<ThemeMode>(
+            value: ThemeMode.light,
+            groupValue: themeMode,
+            onChanged: (v) {
+              if (v != null) onSetThemeMode(v);
+            },
+            title: Text(l10n.settingsThemeLight),
+            secondary: const Icon(Icons.light_mode_rounded),
+          ),
+          RadioListTile<ThemeMode>(
+            value: ThemeMode.dark,
+            groupValue: themeMode,
+            onChanged: (v) {
+              if (v != null) onSetThemeMode(v);
+            },
+            title: Text(l10n.settingsThemeDark),
+            secondary: const Icon(Icons.dark_mode_rounded),
           ),
 
           const Divider(height: 32),
 
           // ── Language ───────────────────────────────────────
           _SectionHeader(label: l10n.settingsLanguage, colorScheme: colorScheme),
-          RadioGroup<Locale?>(
-            groupValue: locale,
-            onChanged: onSetLocale,
-            child: Column(
-              children: [
-                RadioListTile(
-                  value: null,
-                  title: Text(l10n.settingsLanguageSystem),
-                  secondary: const Icon(Icons.language_rounded),
-                ),
-                RadioListTile(
-                  value: const Locale('en'),
-                  title: Text(l10n.settingsLanguageEnglish),
-                  secondary: const Icon(Icons.translate_rounded),
-                ),
-                RadioListTile(
-                  value: const Locale('es'),
-                  title: Text(l10n.settingsLanguageSpanish),
-                  secondary: const Icon(Icons.translate_rounded),
-                ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: SegmentedButton<Locale?>(
+              segments: [
+                ButtonSegment(value: null, label: Text(l10n.settingsLanguageSystem)),
+                ButtonSegment(value: const Locale('en'), label: Text(l10n.settingsLanguageEnglish)),
+                ButtonSegment(value: const Locale('es'), label: Text(l10n.settingsLanguageSpanish)),
               ],
+              selected: {locale},
+              onSelectionChanged: (s) => onSetLocale(s.first),
             ),
           ),
 
@@ -192,7 +183,7 @@ class _PaletteSwatch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appScheme = Theme.of(context).colorScheme;
-    final preview  = palette.scheme(Brightness.light);
+    final preview = palette.scheme(Brightness.light);
 
     return GestureDetector(
       onTap: onTap,
@@ -213,9 +204,7 @@ class _PaletteSwatch extends StatelessWidget {
                   width: isSelected ? 3 : 1.5,
                 ),
                 boxShadow: isSelected
-                    ? [BoxShadow(
-                        color: preview.primary.withValues(alpha: 0.35),
-                        blurRadius: 10, spreadRadius: 2)]
+                    ? [BoxShadow(color: preview.primary.withValues(alpha: 0.35), blurRadius: 10, spreadRadius: 2)]
                     : null,
               ),
               child: Stack(
@@ -223,19 +212,18 @@ class _PaletteSwatch extends StatelessWidget {
                 children: [
                   // Primary — large circle center
                   Container(
-                    width: 36, height: 36,
-                    decoration: BoxDecoration(
-                      color: preview.primary, shape: BoxShape.circle),
-                    child: isSelected
-                        ? Icon(Icons.check_rounded,
-                            color: preview.onPrimary, size: 18)
-                        : null,
+                    width: 36,
+                    height: 36,
+                    decoration: BoxDecoration(color: preview.primary, shape: BoxShape.circle),
+                    child: isSelected ? Icon(Icons.check_rounded, color: preview.onPrimary, size: 18) : null,
                   ),
                   // Secondary — bottom-right pip
                   Positioned(
-                    right: 8, bottom: 8,
+                    right: 8,
+                    bottom: 8,
                     child: Container(
-                      width: 14, height: 14,
+                      width: 14,
+                      height: 14,
                       decoration: BoxDecoration(
                         color: preview.secondary,
                         shape: BoxShape.circle,
@@ -245,9 +233,11 @@ class _PaletteSwatch extends StatelessWidget {
                   ),
                   // Tertiary — top-right pip
                   Positioned(
-                    right: 8, top: 8,
+                    right: 8,
+                    top: 8,
                     child: Container(
-                      width: 14, height: 14,
+                      width: 14,
+                      height: 14,
                       decoration: BoxDecoration(
                         color: preview.tertiary,
                         shape: BoxShape.circle,

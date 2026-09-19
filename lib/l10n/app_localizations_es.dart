@@ -177,13 +177,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsThemeDark => 'Oscuro';
 
   @override
-  String get settingsThemeSystem => 'Predeterminado del sistema';
+  String get settingsThemeSystem => 'Sistema';
 
   @override
   String get settingsLanguage => 'Idioma';
 
   @override
-  String get settingsLanguageSystem => 'Predeterminado del sistema';
+  String get settingsLanguageSystem => 'Sistema';
 
   @override
   String get settingsLanguageEnglish => 'English';

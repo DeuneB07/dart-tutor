@@ -95,7 +95,7 @@ BEGIN
             VALUE "InternalName", "dart_tutor" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 dev.deune. All rights reserved." "\0"
             VALUE "OriginalFilename", "dart_tutor.exe" "\0"
-            VALUE "ProductName", "dart_tutor" "\0"
+            VALUE "ProductName", "Dart Tutor" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

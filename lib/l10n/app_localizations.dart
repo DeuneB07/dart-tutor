@@ -419,7 +419,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsLanguageSystem.
   ///
   /// In en, this message translates to:
-  /// **'System default'**
+  /// **'System'**
   String get settingsLanguageSystem;
 
   /// No description provided for @settingsLanguageEnglish.
