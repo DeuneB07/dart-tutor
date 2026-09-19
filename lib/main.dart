@@ -65,8 +65,8 @@ class _DartTutorAppState extends State<DartTutorApp> {
     return MaterialApp(
       title: 'Dart Tutor',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.light(seed: _palette.seed),
-      darkTheme: AppTheme.dark(seed: _palette.seed),
+      theme: AppTheme.light(palette: _palette),
+      darkTheme: AppTheme.dark(palette: _palette),
       themeMode: _themeMode,
       locale: _locale,
       localizationsDelegates: const [

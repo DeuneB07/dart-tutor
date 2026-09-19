@@ -191,39 +191,79 @@ class _PaletteSwatch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
-    final previewScheme = ColorScheme.fromSeed(seedColor: palette.seed, brightness: Brightness.light);
+    final appScheme = Theme.of(context).colorScheme;
+    final preview  = palette.scheme(Brightness.light);
 
     return GestureDetector(
       onTap: onTap,
       child: SizedBox(
-        width: 80,
+        width: 88,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             AnimatedContainer(
               duration: const Duration(milliseconds: 200),
-              width: 56,
-              height: 56,
+              width: 64,
+              height: 64,
               decoration: BoxDecoration(
-                color: previewScheme.primary,
                 shape: BoxShape.circle,
+                color: preview.surface,
                 border: Border.all(
-                  color: isSelected ? colorScheme.primary : colorScheme.outlineVariant,
+                  color: isSelected ? appScheme.primary : appScheme.outlineVariant,
                   width: isSelected ? 3 : 1.5,
                 ),
                 boxShadow: isSelected
-                    ? [BoxShadow(color: previewScheme.primary.withValues(alpha: 0.4), blurRadius: 8, spreadRadius: 2)]
+                    ? [BoxShadow(
+                        color: preview.primary.withValues(alpha: 0.35),
+                        blurRadius: 10, spreadRadius: 2)]
                     : null,
               ),
-              child: isSelected ? Icon(Icons.check_rounded, color: previewScheme.onPrimary, size: 24) : null,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  // Primary — large circle center
+                  Container(
+                    width: 36, height: 36,
+                    decoration: BoxDecoration(
+                      color: preview.primary, shape: BoxShape.circle),
+                    child: isSelected
+                        ? Icon(Icons.check_rounded,
+                            color: preview.onPrimary, size: 18)
+                        : null,
+                  ),
+                  // Secondary — bottom-right pip
+                  Positioned(
+                    right: 8, bottom: 8,
+                    child: Container(
+                      width: 14, height: 14,
+                      decoration: BoxDecoration(
+                        color: preview.secondary,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: preview.surface, width: 1.5),
+                      ),
+                    ),
+                  ),
+                  // Tertiary — top-right pip
+                  Positioned(
+                    right: 8, top: 8,
+                    child: Container(
+                      width: 14, height: 14,
+                      decoration: BoxDecoration(
+                        color: preview.tertiary,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: preview.surface, width: 1.5),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(height: 6),
             Text(
               palette.name,
               style: Theme.of(context).textTheme.labelSmall?.copyWith(
                 fontWeight: isSelected ? FontWeight.w700 : FontWeight.w400,
-                color: isSelected ? colorScheme.primary : colorScheme.onSurfaceVariant,
+                color: isSelected ? appScheme.primary : appScheme.onSurfaceVariant,
               ),
               textAlign: TextAlign.center,
             ),
