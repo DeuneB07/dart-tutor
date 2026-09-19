@@ -1,0 +1,193 @@
+{
+  "@@locale": "en",
+  "appTitle": "Dart Tutor",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "homeSubtitle": "Learn Dart from scratch to advanced",
+  "@homeSubtitle": {},
+  "topicsTitle": "Topics",
+  "@topicsTitle": {},
+  "lessonsLabel": "lessons",
+  "@lessonsLabel": {},
+  "lessonLabel": "lesson",
+  "@lessonLabel": {},
+  "difficultyBeginner": "Beginner",
+  "@difficultyBeginner": {},
+  "difficultyIntermediate": "Intermediate",
+  "@difficultyIntermediate": {},
+  "difficultyAdvanced": "Advanced",
+  "@difficultyAdvanced": {},
+  "topicProgress": "{done} of {total} lessons",
+  "@topicProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "noteLabel": "Note",
+  "@noteLabel": {},
+  "backToTopics": "Back to topics",
+  "@backToTopics": {},
+  "nextLesson": "Next lesson",
+  "@nextLesson": {},
+  "previousLesson": "Previous lesson",
+  "@previousLesson": {},
+  "lessonOf": "Lesson {current} of {total}",
+  "@lessonOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "searchHint": "Search topics...",
+  "@searchHint": {},
+  "noResults": "No topics found",
+  "@noResults": {},
+  "allLevels": "All levels",
+  "@allLevels": {},
+  "filterBy": "Filter",
+  "@filterBy": {},
+  "markDone": "Mark as done",
+  "@markDone": {},
+  "markUndone": "Mark as not done",
+  "@markUndone": {},
+  "lessonDone": "Lesson completed",
+  "@lessonDone": {},
+  "progressLabel": "{done}/{total} lessons completed",
+  "@progressLabel": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "takeQuiz": "Take quiz",
+  "@takeQuiz": {},
+  "quizTitle": "Quiz",
+  "@quizTitle": {},
+  "quizResult": "{score}% correct",
+  "@quizResult": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "quizBestScore": "Best: {score}%",
+  "@quizBestScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "quizCorrect": "Correct!",
+  "@quizCorrect": {},
+  "quizIncorrect": "Incorrect",
+  "@quizIncorrect": {},
+  "quizFinish": "Finish quiz",
+  "@quizFinish": {},
+  "quizRetry": "Retry",
+  "@quizRetry": {},
+  "quizQuestionOf": "Question {current} of {total}",
+  "@quizQuestionOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "quizExplanation": "Explanation",
+  "@quizExplanation": {},
+  "flashcardsTitle": "Flashcards",
+  "@flashcardsTitle": {},
+  "flashcardTap": "Tap to flip",
+  "@flashcardTap": {},
+  "flashcardOf": "{current} / {total}",
+  "@flashcardOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "flashcardKnow": "I know it",
+  "@flashcardKnow": {},
+  "flashcardReview": "Review again",
+  "@flashcardReview": {},
+  "flashcardDone": "Session completed!",
+  "@flashcardDone": {},
+  "flashcardRestart": "Start over",
+  "@flashcardRestart": {},
+  "noQuiz": "No quiz available for this topic",
+  "@noQuiz": {},
+  "noFlashcards": "No flashcards available for this topic",
+  "@noFlashcards": {},
+  "codeCopy": "Copy",
+  "@codeCopy": {},
+  "codeCopied": "Copied",
+  "@codeCopied": {},
+  "lightMode": "Light mode",
+  "@lightMode": {},
+  "darkMode": "Dark mode",
+  "@darkMode": {},
+  "flashcardFrontLabel": "Concept",
+  "@flashcardFrontLabel": {},
+  "flashcardBackLabel": "Explanation",
+  "@flashcardBackLabel": {},
+  "settingsTitle": "Settings",
+  "@settingsTitle": {},
+  "settingsTheme": "Theme",
+  "@settingsTheme": {},
+  "settingsThemeLight": "Light",
+  "@settingsThemeLight": {},
+  "settingsThemeDark": "Dark",
+  "@settingsThemeDark": {},
+  "settingsThemeSystem": "System default",
+  "@settingsThemeSystem": {},
+  "settingsLanguage": "Language",
+  "@settingsLanguage": {},
+  "settingsLanguageSystem": "System default",
+  "@settingsLanguageSystem": {},
+  "settingsLanguageEnglish": "English",
+  "@settingsLanguageEnglish": {},
+  "settingsLanguageSpanish": "Español",
+  "@settingsLanguageSpanish": {},
+  "settingsPalette": "Color palette",
+  "@settingsPalette": {},
+  "settingsData": "Data",
+  "@settingsData": {},
+
+  "settingsResetProgress": "Reset progress",
+  "@settingsResetProgress": {},
+  "settingsResetProgressSubtitle": "Delete all completed lessons and quiz scores",
+  "@settingsResetProgressSubtitle": {},
+  "settingsResetConfirmTitle": "Reset progress?",
+  "@settingsResetConfirmTitle": {},
+  "settingsResetConfirmBody": "This will permanently delete all your completed lessons and quiz scores. This action cannot be undone.",
+  "@settingsResetConfirmBody": {},
+  "settingsResetConfirm": "Reset",
+  "@settingsResetConfirm": {},
+  "settingsResetDone": "Progress reset",
+  "@settingsResetDone": {},
+  "cancel": "Cancel",
+  "@cancel": {}
+}

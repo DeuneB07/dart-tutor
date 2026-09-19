@@ -1,0 +1,193 @@
+{
+  "@@locale": "es",
+  "appTitle": "Dart Tutor",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "homeSubtitle": "Aprende Dart desde cero hasta nivel avanzado",
+  "@homeSubtitle": {},
+  "topicsTitle": "Temas",
+  "@topicsTitle": {},
+  "lessonsLabel": "lecciones",
+  "@lessonsLabel": {},
+  "lessonLabel": "lección",
+  "@lessonLabel": {},
+  "difficultyBeginner": "Principiante",
+  "@difficultyBeginner": {},
+  "difficultyIntermediate": "Intermedio",
+  "@difficultyIntermediate": {},
+  "difficultyAdvanced": "Avanzado",
+  "@difficultyAdvanced": {},
+  "topicProgress": "{done} de {total} lecciones",
+  "@topicProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "noteLabel": "Nota",
+  "@noteLabel": {},
+  "backToTopics": "Volver a temas",
+  "@backToTopics": {},
+  "nextLesson": "Siguiente lección",
+  "@nextLesson": {},
+  "previousLesson": "Lección anterior",
+  "@previousLesson": {},
+  "lessonOf": "Lección {current} de {total}",
+  "@lessonOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "searchHint": "Buscar temas...",
+  "@searchHint": {},
+  "noResults": "No se encontraron temas",
+  "@noResults": {},
+  "allLevels": "Todos los niveles",
+  "@allLevels": {},
+  "filterBy": "Filtrar",
+  "@filterBy": {},
+  "markDone": "Marcar como completada",
+  "@markDone": {},
+  "markUndone": "Marcar como no completada",
+  "@markUndone": {},
+  "lessonDone": "Lección completada",
+  "@lessonDone": {},
+  "progressLabel": "{done}/{total} lecciones completadas",
+  "@progressLabel": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "takeQuiz": "Hacer quiz",
+  "@takeQuiz": {},
+  "quizTitle": "Quiz",
+  "@quizTitle": {},
+  "quizResult": "{score}% correctas",
+  "@quizResult": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "quizBestScore": "Mejor: {score}%",
+  "@quizBestScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "quizCorrect": "¡Correcto!",
+  "@quizCorrect": {},
+  "quizIncorrect": "Incorrecto",
+  "@quizIncorrect": {},
+  "quizFinish": "Finalizar quiz",
+  "@quizFinish": {},
+  "quizRetry": "Reintentar",
+  "@quizRetry": {},
+  "quizQuestionOf": "Pregunta {current} de {total}",
+  "@quizQuestionOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "quizExplanation": "Explicación",
+  "@quizExplanation": {},
+  "flashcardsTitle": "Flashcards",
+  "@flashcardsTitle": {},
+  "flashcardTap": "Toca para voltear",
+  "@flashcardTap": {},
+  "flashcardOf": "{current} / {total}",
+  "@flashcardOf": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "flashcardKnow": "Lo sé",
+  "@flashcardKnow": {},
+  "flashcardReview": "Repasar",
+  "@flashcardReview": {},
+  "flashcardDone": "¡Sesión completada!",
+  "@flashcardDone": {},
+  "flashcardRestart": "Empezar de nuevo",
+  "@flashcardRestart": {},
+  "noQuiz": "No hay quiz disponible para este tema",
+  "@noQuiz": {},
+  "noFlashcards": "No hay flashcards disponibles para este tema",
+  "@noFlashcards": {},
+  "codeCopy": "Copiar",
+  "@codeCopy": {},
+  "codeCopied": "Copiado",
+  "@codeCopied": {},
+  "lightMode": "Modo claro",
+  "@lightMode": {},
+  "darkMode": "Modo oscuro",
+  "@darkMode": {},
+  "flashcardFrontLabel": "Concepto",
+  "@flashcardFrontLabel": {},
+  "flashcardBackLabel": "Explicación",
+  "@flashcardBackLabel": {},
+  "settingsTitle": "Ajustes",
+  "@settingsTitle": {},
+  "settingsTheme": "Tema",
+  "@settingsTheme": {},
+  "settingsThemeLight": "Claro",
+  "@settingsThemeLight": {},
+  "settingsThemeDark": "Oscuro",
+  "@settingsThemeDark": {},
+  "settingsThemeSystem": "Predeterminado del sistema",
+  "@settingsThemeSystem": {},
+  "settingsLanguage": "Idioma",
+  "@settingsLanguage": {},
+  "settingsLanguageSystem": "Predeterminado del sistema",
+  "@settingsLanguageSystem": {},
+  "settingsLanguageEnglish": "English",
+  "@settingsLanguageEnglish": {},
+  "settingsLanguageSpanish": "Español",
+  "@settingsLanguageSpanish": {},
+  "settingsPalette": "Paleta de colores",
+  "@settingsPalette": {},
+  "settingsData": "Datos",
+  "@settingsData": {},
+
+  "settingsResetProgress": "Resetear progreso",
+  "@settingsResetProgress": {},
+  "settingsResetProgressSubtitle": "Elimina todas las lecciones completadas y puntuaciones de quiz",
+  "@settingsResetProgressSubtitle": {},
+  "settingsResetConfirmTitle": "¿Resetear progreso?",
+  "@settingsResetConfirmTitle": {},
+  "settingsResetConfirmBody": "Esto eliminará permanentemente todas tus lecciones completadas y puntuaciones de quiz. Esta acción no se puede deshacer.",
+  "@settingsResetConfirmBody": {},
+  "settingsResetConfirm": "Resetear",
+  "@settingsResetConfirm": {},
+  "settingsResetDone": "Progreso reseteado",
+  "@settingsResetDone": {},
+  "cancel": "Cancelar",
+  "@cancel": {}
+}

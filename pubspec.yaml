@@ -1,0 +1,36 @@
+name: dart_tutor
+description: "Application to improve your skills with Dart"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.20.3
+  shared_preferences: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "web/icons/Icon-512.png"
+  web:
+    generate: true
+    image_path: "web/icons/Icon-512.png"
+  windows:
+    generate: true
+    image_path: "web/icons/Icon-512.png"
+
+flutter:
+  uses-material-design: true
+  generate: true
